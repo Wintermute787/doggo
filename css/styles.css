@@ -1,11 +1,24 @@
+nav {
+  width: 400px;
+  margin: 0 auto;
+
+
+}
+nav ul li{
+  list-style: none;
+  float: left;
+  margin: 0 34px;
+}
+
 header{
   text-align: center;
   border: 1px solid red;
-
 }
 
 header h1 {
   transition: transform .4s ease-in;
+  clear: both;
+  margin-top: 60px;
 }
 
 header h1:hover {
@@ -22,6 +35,14 @@ div {
   float: left;
   text-align: center;
   margin: 5px;
+}
+
+div:nth-child(odd){
+  background-color: aliceblue;
+}
+
+div:nth-child(even){
+  background-color: #cbdeff;
 }
 
 div p {
