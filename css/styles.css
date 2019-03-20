@@ -8,16 +8,28 @@ nav ul li{
   list-style: none;
   float: left;
   margin: 0 34px;
+  transition: all .4s;
+}
+
+nav ul li:hover{
+  border-bottom: 2px solid red;
+  transform: scale(1.2);
 }
 
 header{
   text-align: center;
   border: 1px solid red;
+  height: 200px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  background-image:
+   url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80");
 }
 
 header h1 {
   transition: transform .4s ease-in;
   clear: both;
+  text-transform: uppercase;
+  font-weight: bold;
   margin-top: 60px;
 }
 
@@ -27,7 +39,13 @@ header h1:hover {
 
 img {
   height: 100%;
+  max-height: 129px;
   width: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+section {
+  margin-top: 100px;
 }
 
 div {
@@ -35,6 +53,7 @@ div {
   float: left;
   text-align: center;
   margin: 5px;
+  min-height: 680px;
 }
 
 div:nth-child(odd){
@@ -75,8 +94,10 @@ div p {
 @media screen and (max-width: 768px) {
   div {
     width: 46%;
-    min-height: 640px;
     margin: auto 5px;
+  }
+  img {
+    max-height: 228px;
   }
 }
 
