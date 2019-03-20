@@ -13,20 +13,15 @@ header h1:hover {
 }
 
 img {
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
 }
 
 div {
-  width: 19%;
+  width: 18%;
   float: left;
   text-align: center;
-  padding: 5px;
-}
-
-div img {
-  border: 1px solid red;
-  padding: 2px;
+  margin: 5px;
 }
 
 div p {
@@ -54,4 +49,18 @@ div p {
   box-shadow: 0 2px 2px rgba(0,0,0,.6);
   background-color: #666;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  div {
+    width: 46%;
+    min-height: 640px;
+    margin: auto 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div {
+    width: 100%;
+  }
 }
