@@ -9,6 +9,7 @@ nav ul li{
   float: left;
   margin: 0 34px;
   transition: all .4s;
+  color: white;
 }
 
 nav ul li:hover{
@@ -19,10 +20,10 @@ nav ul li:hover{
 header{
   text-align: center;
   border: 1px solid red;
-  height: 200px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  height: 400px;
+  position: relative;
   background-image:
-   url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80");
+   url("https://images.unsplash.com/photo-1453785675141-67637e2d4b5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2318&q=80");
 }
 
 header h1 {
@@ -31,17 +32,22 @@ header h1 {
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 60px;
+  color: white;
+  font-size: 60px;
+  margin-top: 150px;
+
 }
 
 header h1:hover {
-  transform: rotateY(180deg) scale(3);
+  transform: rotateY(180deg) scale(1.2);
 }
 
 img {
   height: 100%;
   max-height: 129px;
   width: 100%;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
 }
 
 section {
@@ -54,6 +60,7 @@ div {
   text-align: center;
   margin: 5px;
   min-height: 680px;
+  position: relative;
 }
 
 div:nth-child(odd){
@@ -83,6 +90,12 @@ div p {
   border-radius: 20px;
   color: black;
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  left:0;
+  bottom: 0;
+
+
 }
 
 .btn:hover {
